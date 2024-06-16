@@ -43,3 +43,10 @@ function my_theme_logo_class($html) {
     return $html;
 }
 add_filter('get_custom_logo','my_theme_logo_class');
+
+function add_query_vars_filter($vars)
+{
+    $vars[] = 'pg';
+    return $vars;
+}
+add_filter('query_vars','add_query_vars_filter');
