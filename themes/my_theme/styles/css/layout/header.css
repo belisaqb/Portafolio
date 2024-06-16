@@ -1,13 +1,13 @@
 /* Header styles*/
 .my-main-menu {
   width: 90%;
-  margin: 4rem 5%;
+  margin: 2.5rem 5%;
   display: flex;
   justify-content: space-between;
-  background-color: #E50914;
-  opacity: 70%;
+  background-color: black;
+  opacity: 85%;
   color: white;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
   border-radius: 20px;
   position: fixed;
   top: 0;
@@ -19,7 +19,7 @@
     color: white; }
 
 .custom-logo {
-  max-width: 3.5rem; }
+  max-width: 2.5rem; }
 
 .my-navbar {
   display: flex;
