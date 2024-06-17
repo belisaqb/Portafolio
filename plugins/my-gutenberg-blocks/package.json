@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "wp-scripts build && node-sass src/style.css build/style.css && node-sass src/editor.scss build/editor.css",
+    "start": "wp-scripts start"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,10 @@
     "@wordpress/scripts": "^28.1.0",
     "node-sass": "^9.0.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@wordpress/block-editor": "^13.1.0",
+    "@wordpress/blocks": "^13.1.0",
+    "@wordpress/components": "^28.1.0"
+  }
 }
