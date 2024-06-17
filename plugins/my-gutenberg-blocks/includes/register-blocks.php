@@ -1,7 +1,7 @@
 <?php
 
 function my_gutenberg_blocks_register_blocks(){
-    $asset_file = plugin-dir_path(__FILE__) ."../build/index.asset.php";
+    $asset_file = include(plugin_dir_path(__FILE__) ."../build/index.asset.php");
 
     //Registrar scripts el editor del bloque
     wp_register_script(
@@ -14,7 +14,7 @@ function my_gutenberg_blocks_register_blocks(){
     //Registrar los estilos del editor de bloques
     wp_register_style(
         "my-gutenberg-blocks-editor-style",
-        plugins_url("build/editor.css", __DIR__.'/../'),
+        plugins_url("build/editor.css", __DIR__),
         array(),
         $asset_file['version']
     );
@@ -22,7 +22,7 @@ function my_gutenberg_blocks_register_blocks(){
     //Regsitrar los estilos del front-end
     wp_register_style(
         "my-gutenberg-blocks-style",
-        plugins_url("build/style.css", __DIR__.'/../'),
+        plugins_url("build/style.css", __DIR__),
         array(),
         $asset_file['version']
     );

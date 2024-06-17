@@ -3,7 +3,7 @@ import { TextControl } from '@wordpress/components';
 import { useBlockProps } from '@wordpress/block-editor';
 
 registerBlockType('wp-gutenberg/sketchfab', {
-    title: 'Sketchfab embed',
+    title: 'Sketchfab',
     icon: 'video-alt3',
     category: 'embed',
     attributes: {
