@@ -1,5 +1,5 @@
 
 (function ($) {
-    console.log('a');
+    // console.log('a');
     $('#menu-mainmenu').slicknav();
 })(jQuery);
