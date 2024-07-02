@@ -30,7 +30,7 @@ get_header(); ?>
     $paged = get_query_var('pg');
 
     $args = [
-        'post_type' => 'post',
+        'post_type' => 'proyectos',
         'post_per_page' => 10,
         'paged' => $paged,
     ];
@@ -56,10 +56,11 @@ get_header(); ?>
                         </div>
                         <div class="card-content">
                             <h4><?php echo get_the_title(); ?></h4>
-                            <p><?php //echo get_the_content(); ?></p>
                         </div>
                     </a>
                 </li>
+                <?php //echo get_the_content(); ?>
+
                 <?php
             }
             ?>

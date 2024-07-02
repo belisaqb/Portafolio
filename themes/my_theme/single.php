@@ -26,13 +26,18 @@ get_header(); ?>
 
 	<?php //astra_content_loop(); ?>
 
+	<div class="red-header">
+	</div>
 	<?php if (have_posts()):
 		while (have_posts()):
 			the_post(); ?>
-			<h2 class="post-title"><?php the_title(); ?></h2>
-			<div>
-				<?php the_content(); ?>
-			</div>
+			<div class="post-container">
+				<h2 class="post-title"><?php the_title(); ?></h2>
+				<div>
+					<?php the_content(); ?>
+					
+				</div>
+			</div>			
 		<?php endwhile; endif; ?>
 
 	<?php astra_primary_content_bottom(); ?>

@@ -22,3 +22,20 @@
 .content-container.elementor-widget {
   height: 100%;
   width: 100%; }
+
+.ast-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none; }
+
+.ast-separate-container #primary {
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+.ast-narrow-container .site-content > .ast-container {
+  max-width: none; }
+
+.ast-plain-container.ast-no-sidebar #primary {
+  margin: 0; }
