@@ -1,0 +1,59 @@
+.double-container {
+  width: 100%;
+  display: flex; }
+
+.column-one {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  padding: 5rem 5rem 5rem 7.5rem; }
+
+.column-two {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  height: 80vh;
+  padding: 5rem 7.5rem 5rem 5rem;
+  color: white; }
+
+.container-video {
+  display: flex;
+  justify-content: center; }
+
+.badge-video {
+  width: 80%;
+  background-color: black;
+  margin: 5rem;
+  padding: 3rem;
+  border-radius: 5px;
+  color: white;
+  text-align: center; }
+
+.badge-tools {
+  width: 100%;
+  background-color: #e7e7e7;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(136, 136, 136, 0.2);
+  border-radius: 5px; }
+
+.btn-more {
+  width: 40%;
+  background-color: #E50914;
+  color: white;
+  border: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px; }
+
+.btn-more:hover {
+  color: black;
+  background-color: #e7e7e7;
+  transition: 1s; }
+
+.btn-more:visited {
+  color: white; }

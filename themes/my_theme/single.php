@@ -26,8 +26,7 @@ get_header(); ?>
 
 	<?php //astra_content_loop(); ?>
 
-	<div class="red-header">
-	</div>
+	
 	<?php if (have_posts()):
 		while (have_posts()):
 			the_post(); ?>

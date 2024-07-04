@@ -2,7 +2,8 @@
     box-shadow: 0 4px 8px 0 rgba(136, 136, 136, 0.2);
     transition: 0.3s;
     border-radius: 5px;
-    width: 18rem;
+    min-width: 18rem;
+    max-width: 18rem;
     list-style: none;
 }
 
@@ -30,4 +31,8 @@
 
 .post-container{
     margin: 3rem 20rem;
+}
+
+.post-title{
+    margin: 3rem 0;
 }

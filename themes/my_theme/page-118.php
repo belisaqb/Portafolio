@@ -37,17 +37,16 @@ get_header(); ?>
 
     $query = new WP_Query($args);
     ?>
-    <div class="red-header">
-    </div>
+    
+    <div class="">
+        <h2 class="section-title">Projects</h2>
+        <ul class="content-container">           
 
-    <div>
-        <ul class="content-container">
             <?php
             while ($query->have_posts()) {
                 $query->the_post();
                 global $post;
                 ?>
-
                 <li class="card col">
                     <a href="<?php echo get_the_permalink(); ?>">
                         <div class="card-container-img">
@@ -55,7 +54,8 @@ get_header(); ?>
                                 alt="<?php echo get_the_title(); ?>">
                         </div>
                         <div class="card-content">
-                            <h4><?php echo get_the_title(); ?></h4>
+                            <h4 class="mb-1"><?php echo get_the_title(); ?></h4>
+                            <p class="text-dark m-0"><?php echo get_field('categoria'); ?></p>
                         </div>
                     </a>
                 </li>

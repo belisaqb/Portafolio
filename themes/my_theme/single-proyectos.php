@@ -28,21 +28,43 @@ get_header(); ?>
 
         <?php //astra_content_loop(); ?>
 
-        <div class="red-header">
-        </div>
+        
         <?php if (have_posts()):
             while (have_posts()):
                 the_post(); ?>
-                <div class="post-container">
-                    <h2 class="post-title"><?php the_title(); ?></h2>
-                    <div>
-                        <?php the_content(); ?>                      
-                        <?php echo get_field('Fecha'); ?>
-                        <?php $model = get_field('sketchfab_url'); ?>
-                        <iframe src="<?php echo $model ?>/embed" frameborder="0"></iframe>                    
-                    
+                <div class="double-container">
+                    <div class="column-one">
+                        <h1 class="project-title"><?php the_title(); ?></h1>
+                        <p class="red-line"></p>
+
+                        <p class="m-0"><?php echo get_field('Fecha'); ?></p>
+
+                        <h4 class="mb-3">Type of project: <span class="text-red"><?php echo get_field('categoria'); ?></span></h4>
+
+
+                        <div class="badge-tools">
+                            <h4 class="mb-1">Tools</h4>
+                            <p class="m-0"><?php echo get_field('softwares'); ?></p>
+                        </div>
+                        <a href="#demo" class="btn-more mt-5">Watch Demo</a>
                     </div>
-                </div>                
+                    <div class="column-two">
+                        <h2 class="text-light">Summary</h2>
+                        <p class="red-line"></p>
+                        <p class="m-0"><?php echo get_field('descripcion'); ?></p>
+                        <a href="<?php echo get_field('github_url'); ?>">See on GitHub</a>
+
+                    </div>
+                </div>
+                <!-- <div class="container-video">
+                    <div id="demo" class="badge-video">
+                        <h3 class="text-light mb-5">Demo</h3>
+                        <?php //the_content(); ?>
+                    </div>
+                </div> -->
+
+                <?php the_content(); ?>
+
             <?php endwhile; endif; ?>
 
         <?php astra_primary_content_bottom(); ?>

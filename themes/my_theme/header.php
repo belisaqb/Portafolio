@@ -56,9 +56,11 @@ if (!defined('ABSPATH')) {
 
 		// astra_header();
 		?>
+		<div class="red-header position-relative">
+    	</div>
 		
 		<!-- Para crear nuesto navbar -->
-		<nav class="my-main-menu">
+		<nav class="my-main-menu position-absolute">
 			<?php if(has_custom_logo()): ?>
 				<div class="site-logo">
 					<?php the_custom_logo(); ?>

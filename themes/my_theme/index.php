@@ -31,15 +31,13 @@ get_header(); ?>
 
     $args = [
         'post_type' => 'post',
-        'post_per_page' => 10,
+        'post_per_page' => 5,
         'paged' => $paged,
     ];
 
     $query = new WP_Query($args);
     ?>
-    <div class="red-header">
-    </div>
-
+    
     <div>
         <ul class="content-container">
             <?php
@@ -60,9 +58,11 @@ get_header(); ?>
                         </div>
                     </a>
                 </li>
-                <?php
+                
+                <?php 
             }
             ?>
+            
             <div>
                 <ul>
                     <?php
