@@ -53,7 +53,9 @@
 .btn-more:hover {
   color: black;
   background-color: #e7e7e7;
-  transition: 1s; }
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent; }
 
 .btn-more:visited {
-  color: white; }
+  color: white;
+  -webkit-tap-highlight-color: transparent; }

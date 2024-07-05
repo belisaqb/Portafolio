@@ -108,6 +108,9 @@
 .content-p {
   margin: 0; }
 
+.layout-container {
+  margin: 0rem 15rem; }
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(136, 136, 136, 0.2);
   transition: 0.3s;
@@ -195,10 +198,12 @@
 .btn-more:hover {
   color: black;
   background-color: #e7e7e7;
-  transition: 1s; }
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent; }
 
 .btn-more:visited {
-  color: white; }
+  color: white;
+  -webkit-tap-highlight-color: transparent; }
 
 .section-title {
   margin: 3rem;

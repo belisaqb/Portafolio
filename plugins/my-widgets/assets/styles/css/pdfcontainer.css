@@ -1,4 +1,4 @@
-/* .btn-cv {
+.btn-cv {
     background-color: #E50914;
     color: white;
     border: none;
@@ -8,4 +8,14 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 4px;
-} */
+}
+
+.btn-cv:hover {
+    color: black;
+    background-color: #e7e7e7;
+    transition: 1s;
+}
+
+.btn-cv:visited {
+    color: white;
+}
